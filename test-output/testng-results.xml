@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="121861" started-at="2018-10-08T10:15:36Z" finished-at="2018-10-08T10:17:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="121861" started-at="2018-10-08T10:15:36Z" finished-at="2018-10-08T10:17:38Z">
+      <class name="CitoolAutomationTesting.AnalyticsShowPerformance">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:CitoolAutomationTesting.AnalyticsShowPerformance@2b9627bc]" name="startReport" is-config="true" duration-ms="261" started-at="2018-10-08T14:15:36Z" finished-at="2018-10-08T14:15:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="failTest()[pri:0, instance:CitoolAutomationTesting.AnalyticsShowPerformance@2b9627bc]" name="failTest" duration-ms="120536" started-at="2018-10-08T14:15:37Z" finished-at="2018-10-08T14:17:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.AnalyticsShowPerformance@2b9627bc]" name="getResult" is-config="true" duration-ms="3" started-at="2018-10-08T14:17:37Z" finished-at="2018-10-08T14:17:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failTest status=SUCCESS method=AnalyticsShowPerformance.failTest()[pri:0, instance:CitoolAutomationTesting.AnalyticsShowPerformance@2b9627bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="passTest()[pri:0, instance:CitoolAutomationTesting.AnalyticsShowPerformance@2b9627bc]" name="passTest" duration-ms="4" started-at="2018-10-08T14:17:37Z" finished-at="2018-10-08T14:17:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.AnalyticsShowPerformance@2b9627bc]" name="getResult" is-config="true" duration-ms="0" started-at="2018-10-08T14:17:37Z" finished-at="2018-10-08T14:17:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=passTest status=SUCCESS method=AnalyticsShowPerformance.passTest()[pri:0, instance:CitoolAutomationTesting.AnalyticsShowPerformance@2b9627bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:CitoolAutomationTesting.AnalyticsShowPerformance@2b9627bc]" name="endReport" is-config="true" duration-ms="1040" started-at="2018-10-08T14:17:37Z" finished-at="2018-10-08T14:17:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- CitoolAutomationTesting.AnalyticsShowPerformance -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
