@@ -71,7 +71,7 @@ public class AramexOutletsClass {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(8000);
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[1]/input")).sendKeys("pooja.patange@citruss.com");
-		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[2]/input")).sendKeys("Welcome1");
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[2]/input")).sendKeys("Welcome1!");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/button")).click();
 		String Aramex = AramexOutletsClass.aramexmethod(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
