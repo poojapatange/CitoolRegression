@@ -77,8 +77,21 @@ public class AnalyticsShowPerformance {
 			String showPerformence = AnalyticsShowPerformance.showPerformenceMethod(driver);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
+			String showMBC = AnalyticsShowPerformance.showPerformenceMBC(driver);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			String showZeeAflam = AnalyticsShowPerformance.showPerformenceZeeAflam(driver);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			String showZeeAlwan = AnalyticsShowPerformance.showPerformenceZeeAlwan(driver);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			String showZeeliving = AnalyticsShowPerformance.showPerformenceZeeliving(driver);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+						
 			
-			if (showPerformence.equals("fail")) {
+			if (showPerformence.equals("fail") || showMBC.equals("fail") || showZeeAflam.equals("fail") || showZeeAlwan.equals("fail") || showZeeliving.equals("fail")) {
 				Assert.assertEquals(showPerformence, "verifying Show Performence");
 				logger.log(LogStatus.FAIL, "Test Case (failTest) Status is Show Performence");
 			}
@@ -102,7 +115,7 @@ public class AnalyticsShowPerformance {
 			}
 
 			try {
-				System.out.println("Anaytics Show Performence");
+				System.out.println("Anaytics Show Performence for Citruss TV");
 				driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				Thread.sleep(8000);
@@ -135,7 +148,7 @@ public class AnalyticsShowPerformance {
 				Thread.sleep(8000);
 				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/button")).click();// validate
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				Thread.sleep(8000);
+				Thread.sleep(25000);
 				
 				
 			} catch (Exception e) {
@@ -146,6 +159,196 @@ public class AnalyticsShowPerformance {
 			return "sucess";
 		}
 
+		public static String showPerformenceMBC(WebDriver driver) throws InterruptedException {
+
+				try {
+				System.out.println("Anaytics Show Performence for MBC");
+				driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("/html/body/div/div[1]/div/div/ul[5]/li[1]/a")).click();// icone select
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/filter-by-channel/div/button")).click();// select channel
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/filter-by-channel/div/ul/li[3]/a")).click();// MBC tv
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(8000);
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/button")).click();// validate
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Thread.sleep(25000);
+				
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.out.println(e.getMessage());
+				return "fail";
+			}
+			return "sucess";
+		}
+
+		public static String showPerformenceZeeAflam(WebDriver driver) throws InterruptedException {
+
+			try {
+			System.out.println("Anaytics Show Performence for ZEE Aflam");
+			driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("/html/body/div/div[1]/div/div/ul[5]/li[1]/a")).click();// icone select
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/filter-by-channel/div/button")).click();// select channel
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/filter-by-channel/div/ul/li[4]/a")).click();// Zee Aflam tv
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/button")).click();// validate
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(25000);
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+			return "fail";
+		}
+		return "sucess";
+	}
+		
+		
+		public static String showPerformenceZeeAlwan(WebDriver driver) throws InterruptedException {
+
+			try {
+			System.out.println("Anaytics Show Performence for ZEE Alwan");
+			driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("/html/body/div/div[1]/div/div/ul[5]/li[1]/a")).click();// icone select
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/filter-by-channel/div/button")).click();// select channel
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/filter-by-channel/div/ul/li[5]/a")).click();// ZEE Alwan tv
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/button")).click();// validate
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(25000);
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+			return "fail";
+		}
+		return "sucess";
+	}
+		
+		
+		public static String showPerformenceZeeliving(WebDriver driver) throws InterruptedException {
+
+			try {
+			System.out.println("Anaytics Show Performence for ZEE living");
+			driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("/html/body/div/div[1]/div/div/ul[5]/li[1]/a")).click();// icone select
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/filter-by-channel/div/button")).click();// select channel
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/filter-by-channel/div/ul/li[6]/a")).click();// Zee Living tv
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(8000);
+			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/button")).click();// validate
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(25000);
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+			return "fail";
+		}
+		return "sucess";
+	}
+		
 		public static void verifyimageActive(WebElement imgElement) {
 			try {
 				HttpClient client = HttpClientBuilder.create().build();

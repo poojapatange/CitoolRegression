@@ -59,5 +59,21 @@
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/Sekuli/sikulixapi.jar"/>
 	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/poi-ooxml-3.5-beta5.jar/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/sikuli-core-1.0.0.jar/sikuli-core-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/animal-sniffer-annotations-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/checker-compat-qual-2.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/error_prone_annotations-2.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/j2objc-annotations-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-api-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-chrome-driver-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-edge-driver-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-firefox-driver-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-ie-driver-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-java-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-opera-driver-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-remote-driver-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-safari-driver-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PoojaPatange/Downloads/workfolder/java_libraryfiles/jar_files/selenium-support-3.14.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

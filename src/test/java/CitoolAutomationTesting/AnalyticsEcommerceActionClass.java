@@ -1,3 +1,4 @@
+
 package CitoolAutomationTesting;
 
 import java.io.File;
@@ -63,15 +64,13 @@ public class AnalyticsEcommerceActionClass {
 	@Test
 	public void failTest() throws InterruptedException {
 		logger = extent.startTest("failTest");
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\PoojaPatange\\Downloads\\workfolder\\chromedrive\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\PoojaPatange\\Downloads\\workfolder\\chromedrive\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://citool.ctv-it.net");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(8000);
-		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[1]/input"))
-				.sendKeys("pooja.patange@citruss.com");
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[1]/input")).sendKeys("pooja.patange@citruss.com");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[2]/input")).sendKeys("Welcome1!");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/button")).click();
 		String Ecommerce = AnalyticsEcommerceActionClass.EcommerceMethod(driver);
