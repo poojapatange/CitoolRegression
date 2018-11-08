@@ -146,19 +146,20 @@
 			<version>3.2.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
-		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>1.2</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-api -->
 		<dependency>
 			<groupId>org.sikuli</groupId>
 			<artifactId>sikuli-api</artifactId>
 			<version>1.2.0</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-core -->
+		<dependency>
+			<groupId>org.sikuli</groupId>
+			<artifactId>sikuli-core</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+
 
 	</dependencies>
 

@@ -15,8 +15,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+import org.sikuli.script.*;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -26,7 +25,6 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 
 public class AnalyticsTvProgramGuideClass {
 	ExtentReports extent;
@@ -77,7 +75,7 @@ public class AnalyticsTvProgramGuideClass {
 		String TVGuide = AnalyticsTvProgramGuideClass.TvProgramGuideMethod(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(8000);
-		String mbctv = AnalyticsTvProgramGuideClass.MBCTvProgramGuideMethod(driver);
+		String TVmbc = AnalyticsTvProgramGuideClass.MBCTvProgramGuideMethod(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(8000);		
 		String zeealfam = AnalyticsTvProgramGuideClass.ZeeAflamTvProgramGuideMethod(driver);
@@ -89,7 +87,7 @@ public class AnalyticsTvProgramGuideClass {
 		String zeeliving = AnalyticsTvProgramGuideClass.ZeeLivingTvProgramGuideMethod(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(8000);
-		if (TVGuide.equals("fail") || mbctv.equals("fail") || zeeAlwan.equals("fail") || zeealfam.equals("fail") || zeeliving.equals("fail")){
+		if (TVGuide.equals("fail") || TVmbc.equals("fail") || zeeAlwan.equals("fail") || zeealfam.equals("fail") || zeeliving.equals("fail")){
 			Assert.assertEquals(TVGuide, "verifying TVGuide");
 			logger.log(LogStatus.FAIL, "Test Case (failTest) Status is TVGuide");
 		}

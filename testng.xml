@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
-<listeners>
-<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
-</listeners>
   <test thread-count="5" name="Test">
     <classes>
-     <!--  <class name="CitoolAutomationTesting.SalesPerformanceReport"/>
-      <class name="CitoolAutomationTesting.TvProgramGuideClass"/>
+      <class name="CitoolAutomationTesting.AnalyticsTvProgramGuideClass"/>
+      <class name="CitoolAutomationTesting.SalesPerformanceReport"/>
       <class name="CitoolAutomationTesting.Call_Evaluation"/>
       <class name="CitoolAutomationTesting.SkillReport"/>
       <class name="CitoolAutomationTesting.ProductsClass"/>
-      <class name="CitoolAutomationTesting.SAPSalesOrderClass"/> -->
+      <class name="CitoolAutomationTesting.SAPSalesOrderClass"/>
+      <class name="CitoolAutomationTesting.AnalyticsShowPerformance"/>
       <class name="CitoolAutomationTesting.AramexOutletsClass"/>
-     <!--  <class name="CitoolAutomationTesting.AttendanceReport"/>
-      <class name="CitoolAutomationTesting.PilotV1Class"/> -->
+      <class name="CitoolAutomationTesting.OpertionsArea_AramexTracking"/>
+      <class name="CitoolAutomationTesting.AttendanceReport"/>
+      <class name="CitoolAutomationTesting.PilotV1Class"/>
+      <class name="CitoolAutomationTesting.AnalyticsEcommerceActionClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
