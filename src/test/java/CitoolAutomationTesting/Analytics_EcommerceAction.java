@@ -26,7 +26,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class AnalyticsEcommerceActionClass {
+public class Analytics_EcommerceAction {
 	ExtentReports extent;
 	ExtentTest logger;
 	WebDriver driver;
@@ -73,7 +73,7 @@ public class AnalyticsEcommerceActionClass {
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[1]/input")).sendKeys("pooja.patange@citruss.com");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[2]/input")).sendKeys("Welcome1!");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/button")).click();
-		String Ecommerce = AnalyticsEcommerceActionClass.EcommerceMethod(driver);
+		String Ecommerce = Analytics_EcommerceAction.EcommerceMethod(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(16000);
 
@@ -139,7 +139,7 @@ public class AnalyticsEcommerceActionClass {
 			logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
 			logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getThrowable());
 
-			String screenshotPath = AnalyticsEcommerceActionClass.getScreenhot(driver, result.getName());
+			String screenshotPath = Analytics_EcommerceAction.getScreenhot(driver, result.getName());
 			System.out.println("Taken screenshot");
 			objSendEMail.emailsend(screenshotPath);// send email
 			System.out.println("Sent To Mail ID"); // To add it in the extent report

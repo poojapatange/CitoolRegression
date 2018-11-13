@@ -25,7 +25,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class AnalyticsShowPerformance {
+public class Analytics_ShowPerformance {
 
 		ExtentReports extent;
 		ExtentTest logger;
@@ -53,6 +53,7 @@ public class AnalyticsShowPerformance {
 			return destination;
 		}
 
+		// This method is to Decide whether Test is pass or fail
 		@Test
 		public void passTest() {
 			logger = extent.startTest("passTest");
@@ -74,19 +75,19 @@ public class AnalyticsShowPerformance {
 			driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/button")).click();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
-			String showPerformence = AnalyticsShowPerformance.showPerformenceMethod(driver);
+			String showPerformence = Analytics_ShowPerformance.showPerformenceMethod(driver);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
-			String showMBC = AnalyticsShowPerformance.showPerformenceMBC(driver);
+			String showMBC = Analytics_ShowPerformance.showPerformenceMBC(driver);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
-			String showZeeAflam = AnalyticsShowPerformance.showPerformenceZeeAflam(driver);
+			String showZeeAflam = Analytics_ShowPerformance.showPerformenceZeeAflam(driver);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
-			String showZeeAlwan = AnalyticsShowPerformance.showPerformenceZeeAlwan(driver);
+			String showZeeAlwan = Analytics_ShowPerformance.showPerformenceZeeAlwan(driver);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
-			String showZeeliving = AnalyticsShowPerformance.showPerformenceZeeliving(driver);
+			String showZeeliving = Analytics_ShowPerformance.showPerformenceZeeliving(driver);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
 						
@@ -125,7 +126,7 @@ public class AnalyticsShowPerformance {
 				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				Thread.sleep(8000);
-				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("07/11/2018");
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				Thread.sleep(8000);
 				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
@@ -134,7 +135,7 @@ public class AnalyticsShowPerformance {
 				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				Thread.sleep(8000);
-				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
+				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("07/11/2018");
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				Thread.sleep(8000);
 				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
@@ -163,27 +164,6 @@ public class AnalyticsShowPerformance {
 
 				try {
 				System.out.println("Anaytics Show Performence for MBC");
-				driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				Thread.sleep(8000);
-				driver.findElement(By.xpath("/html/body/div/div[1]/div/div/ul[5]/li[1]/a")).click();// icone select
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				Thread.sleep(8000);
-				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				Thread.sleep(8000);
-				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				Thread.sleep(8000);
-				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				Thread.sleep(8000);
-				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				Thread.sleep(8000);
-				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				Thread.sleep(8000);
 				driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				Thread.sleep(8000);
@@ -210,27 +190,6 @@ public class AnalyticsShowPerformance {
 
 			try {
 			System.out.println("Anaytics Show Performence for ZEE Aflam");
-			driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("/html/body/div/div[1]/div/div/ul[5]/li[1]/a")).click();// icone select
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
 			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
@@ -258,27 +217,6 @@ public class AnalyticsShowPerformance {
 
 			try {
 			System.out.println("Anaytics Show Performence for ZEE Alwan");
-			driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("/html/body/div/div[1]/div/div/ul[5]/li[1]/a")).click();// icone select
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
 			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
@@ -306,27 +244,6 @@ public class AnalyticsShowPerformance {
 
 			try {
 			System.out.println("Anaytics Show Performence for ZEE living");
-			driver.findElement(By.xpath("/html/body/header/div[1]/div/div[2]")).click();// main menu
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("/html/body/div/div[1]/div/div/ul[5]/li[1]/a")).click();// icone select
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).clear();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).sendKeys("14/09/2018");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[1]/div[1]/input")).click();// 
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).clear();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).sendKeys("14/09/2018");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
 			driver.findElement(By.xpath("//*[@id=\"form-dashboard\"]/div/div[2]/div/div[1]/input")).click();// 
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
@@ -369,7 +286,7 @@ public class AnalyticsShowPerformance {
 				System.out.println(" Analytics Show Performance Test Cases have been failed");
 				logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
 				logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getThrowable());
-				String screenshotPath = AnalyticsShowPerformance.getScreenhot(driver, result.getName());
+				String screenshotPath = Analytics_ShowPerformance.getScreenhot(driver, result.getName());
 				System.out.println("Taken screenshot");
 				objSendEMail.emailsend(screenshotPath);// send email
 				System.out.println("Sent To Mail ID"); // To add it in the extent report

@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="141886" started-at="2018-11-08T13:40:37Z" finished-at="2018-11-08T13:42:58Z">
+  <suite name="Default suite" duration-ms="343354" started-at="2018-11-13T07:48:17Z" finished-at="2018-11-13T07:54:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="141886" started-at="2018-11-08T13:40:37Z" finished-at="2018-11-08T13:42:58Z">
-      <class name="CitoolAutomationTesting.Quality_CallEvaluation">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:CitoolAutomationTesting.Quality_CallEvaluation@34c4973]" name="startReport" is-config="true" duration-ms="331" started-at="2018-11-08T17:40:37Z" finished-at="2018-11-08T17:40:37Z">
+    <test name="Default test" duration-ms="343354" started-at="2018-11-13T07:48:17Z" finished-at="2018-11-13T07:54:00Z">
+      <class name="CitoolAutomationTesting.Analytics_TvProgramGuide">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="startReport" is-config="true" duration-ms="294" started-at="2018-11-13T11:48:17Z" finished-at="2018-11-13T11:48:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="failTest()[pri:0, instance:CitoolAutomationTesting.Quality_CallEvaluation@34c4973]" name="failTest" duration-ms="140456" started-at="2018-11-08T17:40:37Z" finished-at="2018-11-08T17:42:57Z">
+        <test-method status="PASS" signature="failTest()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="failTest" duration-ms="341888" started-at="2018-11-13T11:48:17Z" finished-at="2018-11-13T11:53:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.Quality_CallEvaluation@34c4973]" name="getResult" is-config="true" duration-ms="3" started-at="2018-11-08T17:42:57Z" finished-at="2018-11-08T17:42:57Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="getResult" is-config="true" duration-ms="6" started-at="2018-11-13T11:53:59Z" finished-at="2018-11-13T11:53:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=failTest status=SUCCESS method=Quality_CallEvaluation.failTest()[pri:0, instance:CitoolAutomationTesting.Quality_CallEvaluation@34c4973] output={null}]]]>
+                <![CDATA[[TestResult name=failTest status=SUCCESS method=Analytics_TvProgramGuide.failTest()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="passTest()[pri:0, instance:CitoolAutomationTesting.Quality_CallEvaluation@34c4973]" name="passTest" duration-ms="7" started-at="2018-11-08T17:42:57Z" finished-at="2018-11-08T17:42:57Z">
+        <test-method status="PASS" signature="passTest()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="passTest" duration-ms="7" started-at="2018-11-13T11:53:59Z" finished-at="2018-11-13T11:53:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.Quality_CallEvaluation@34c4973]" name="getResult" is-config="true" duration-ms="0" started-at="2018-11-08T17:42:57Z" finished-at="2018-11-08T17:42:57Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="getResult" is-config="true" duration-ms="0" started-at="2018-11-13T11:53:59Z" finished-at="2018-11-13T11:53:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=passTest status=SUCCESS method=Quality_CallEvaluation.passTest()[pri:0, instance:CitoolAutomationTesting.Quality_CallEvaluation@34c4973] output={null}]]]>
+                <![CDATA[[TestResult name=passTest status=SUCCESS method=Analytics_TvProgramGuide.passTest()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:CitoolAutomationTesting.Quality_CallEvaluation@34c4973]" name="endReport" is-config="true" duration-ms="1072" started-at="2018-11-08T17:42:57Z" finished-at="2018-11-08T17:42:58Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="endReport" is-config="true" duration-ms="1138" started-at="2018-11-13T11:53:59Z" finished-at="2018-11-13T11:54:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- CitoolAutomationTesting.Quality_CallEvaluation -->
+      </class> <!-- CitoolAutomationTesting.Analytics_TvProgramGuide -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
