@@ -10,7 +10,6 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -22,12 +21,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class ProductsClass {
+public class CallCenterTools_AramexOutlets {
 	ExtentReports extent;
 	ExtentTest logger;
 	WebDriver driver;
@@ -49,8 +47,8 @@ public class ProductsClass {
 		String dateName = new SimpleDateFormat("dd-MM-yyyy HH-mm-ss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName + ".png";
-
+		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName+ ".png";
+		
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;
@@ -66,29 +64,28 @@ public class ProductsClass {
 	@Test
 	public void failTest() throws InterruptedException {
 		logger = extent.startTest("failTest");
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\PoojaPatange\\Downloads\\workfolder\\chromedrive\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\PoojaPatange\\Downloads\\workfolder\\chromedrive\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://citool.ctv-it.net");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(8000);
-		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[1]/input"))
-				.sendKeys("pooja.patange@citruss.com");
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[1]/input")).sendKeys("pooja.patange@citruss.com");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[2]/input")).sendKeys("Welcome1!");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/button")).click();
-		String Products = ProductsClass.productsmethod(driver);
+		String Aramex = CallCenterTools_AramexOutlets.aramexmethod(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(8000);
-		if (Products.equals("fail")) {
-			Assert.assertEquals(Products, "verifying Products");
+		if (Aramex.equals("fail")) {
+			Assert.assertEquals(Aramex, "Aramex Outlets");
 			logger.log(LogStatus.FAIL, "Test Case (failTest) Status is failed");
 		}
-	}
 
+	}
+	
 	@Test
-	public static String productsmethod(WebDriver driver) throws InterruptedException {
-		try {
+	public static String aramexmethod(WebDriver driver) throws InterruptedException {
+			try {
 			invalidImageCount = 0;
 			List<WebElement> imagesList = driver.findElements(By.tagName("img"));
 			// System.out.println("Total no. of images are " + imagesList.size());
@@ -105,63 +102,21 @@ public class ProductsClass {
 		}
 
 		try {
-			System.out.println("i came to product");
+			System.out.println("I Came To Aramex Outlets");
 			driver.findElement(By.xpath("html/body/header/div[1]/div/div[2]")).click();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
-			driver.findElement(By.xpath("html/body/div[1]/div[1]/div/div/ul[4]/li/a/span")).click();
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			Thread.sleep(10000);
-			WebElement element = driver.findElement(By.xpath("//*[@id='searchTextProduct']"));// search products
-			element.sendKeys("Tria");
-			element.sendKeys(Keys.ENTER);
+			driver.findElement(By.xpath("html/body/div[1]/div[1]/div/div/ul[3]/li[1]/a/span")).click();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id='onoffswitch-pilot']/div/div[1]/div/div/label/span[2]")).click();// hide sales kit
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id='onoffswitch-pilot']/div/div[3]/div/div/label/span[2]")).click();//visible products
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id='onoffswitch-pilot']/div/button[4]")).click();//stock
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id='onoffswitch-pilot']/div/button[2]")).click();// export
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			Thread.sleep(12000);
-			driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/div[2]/product-search-comp/div[1]/div/div[2]/div/div[3]/input")).sendKeys("2");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/div[2]/product-search-comp/div[1]/div/div[2]/div/div[3]/button")).click();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id='priceSelect']")).click();//tvprice
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div/div[2]/product-search-comp/div[1]/div/div[2]/div/div[4]/div/select/option[1]")).click();//tvprice
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div/div[2]/product-search-comp/div[1]/div/div[2]/div/div[4]/div/select/option[3]")).click();//tvprice
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div/div[2]/product-search-comp/div[1]/div/div[2]/div/div[4]/div/select/option[2]")).click();//tvprice
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/div[2]/product-search-comp/div[1]/div/div[2]/div/div[5]/div/div/div[1]/div[1]/div[1]/div/div/i")).click();//view
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@id='myModalDetails']/div/div/div[1]/button")).click();//arabic/english
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/div[2]/product-search-comp/div[1]/div/div[1]/div/div[1]/i")).click();
 			
-	
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			e.printStackTrace();
+			System.out.println(e.getMessage());
 			return "fail";
 		}
 		return "sucess";
-
 	}
 
 	public static void verifyimageActive(WebElement imgElement) {
@@ -177,20 +132,22 @@ public class ProductsClass {
 			e.printStackTrace();
 		}
 	}
-	
+	/*
+	 * @Test public void skipTest(){ logger = extent.startTest("skipTest"); throw
+	 * new SkipException("Skipping - This is not ready for testing "); }
+	 */
+
 	@AfterMethod
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
-			System.out.println(" Main Menu Test Cases have been failed");
 			logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
 			logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getThrowable());
-			
-			  String screenshotPath = PilotV1Class.getScreenhot(driver, result.getName());
-			  System.out.println("Taken screenshot");
-			  objSendEMail.emailsend(screenshotPath);// send email
-			  System.out.println("Sent To Mail ID"); // To add it in the extent report
-			  logger.log(LogStatus.FAIL, logger.addScreenCapture(screenshotPath));
-			 
+			String screenshotPath = CallCenterTools_AramexOutlets.getScreenhot(driver, result.getName());
+			System.out.println("Taken screenshot");
+			objSendEMail.emailsend(screenshotPath);// send email
+			System.out.println("Sent To Mail ID");
+			// To add it in the extent report
+			logger.log(LogStatus.FAIL, logger.addScreenCapture(screenshotPath));
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			logger.log(LogStatus.SKIP, "Test Case Skipped is " + result.getName());
 		}

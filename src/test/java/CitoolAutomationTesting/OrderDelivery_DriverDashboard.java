@@ -217,7 +217,7 @@ public class OrderDelivery_DriverDashboard {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
 			logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getThrowable());
-			String screenshotPath = OpertionsArea_AramexTracking.getScreenhot(driver, result.getName());
+			String screenshotPath = OrderDelivery_DriverDashboard.getScreenhot(driver, result.getName());
 			System.out.println("Taken screenshot");
 			objSendEMail.emailsend(screenshotPath);// send email
 			System.out.println("Sent To Mail ID");

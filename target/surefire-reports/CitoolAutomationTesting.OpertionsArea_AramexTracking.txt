@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: CitoolAutomationTesting.OpertionsArea_AramexTracking
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 106.777 s - in CitoolAutomationTesting.OpertionsArea_AramexTracking

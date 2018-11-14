@@ -26,7 +26,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class PilotV1Class {
+public class CallCenterTools_Pilot {
 	ExtentReports extent;
 	ExtentTest logger;
 	WebDriver driver;
@@ -73,9 +73,12 @@ public class PilotV1Class {
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[1]/input")).sendKeys("pooja.patange@citruss.com");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/div[2]/input")).sendKeys("Welcome1!");
 		driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/form/button")).click();
-		String PilotV1 = PilotV1Class.pilotv1method(driver);
+		//method
+		String PilotV1 = CallCenterTools_Pilot.pilotv1method(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(8000);
+		
+		//validation
 		if (PilotV1.equals("fail")) {
 			Assert.assertEquals(PilotV1, "verifying PilotV1");
 			logger.log(LogStatus.FAIL, "Test Case (failTest) Status is failed");
@@ -110,7 +113,7 @@ public class PilotV1Class {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(8000);
 			driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/div[2]/div/div[1]/div/div/div[1]/div/ul/li[3]/a/i")).click();
-			driver.findElement(By.xpath("//*[@id='phonenumber']")).sendKeys("0568974568");
+			driver.findElement(By.xpath("//*[@id='phonenumber']")).sendKeys("971568974568");
 			driver.findElement(By.xpath("//*[@id='title']")).click();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div/div[2]/div/div[1]/div/div/div[1]/div/div/div/div/div/form/div[2]/div[1]/select/option[2]")).click();
@@ -182,7 +185,7 @@ public class PilotV1Class {
 				WebElement ele = driver.findElement(By.xpath("//*[@id='searchTextProduct']"));
 				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", ele);
 				WebElement element = driver.findElement(By.xpath("//*[@id='searchTextProduct']"));// search products
-				element.sendKeys("Tria");
+				element.sendKeys("Steel");
 				element.sendKeys(Keys.ENTER);
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				Thread.sleep(8000);

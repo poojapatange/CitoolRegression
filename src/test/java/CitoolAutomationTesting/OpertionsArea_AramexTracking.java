@@ -10,7 +10,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -22,8 +21,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -156,7 +153,7 @@ public class OpertionsArea_AramexTracking {
 			XSSFWorkbook wb = new XSSFWorkbook(inputStream);
 			XSSFSheet sheet1 = wb.getSheetAt(0);
 
-			double data0 = sheet1.getRow(2).getCell(0).getNumericCellValue();
+			double data0 = sheet1.getRow(1).getCell(0).getNumericCellValue();
 			String value = NumberToTextConverter.toText(data0);
 			System.out.println(value);
 			WebElement DatadeivenData = driver.findElement(By.xpath("//*[@id=\"txtWayBillNumber\"]"));

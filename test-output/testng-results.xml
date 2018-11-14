@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="343354" started-at="2018-11-13T07:48:17Z" finished-at="2018-11-13T07:54:00Z">
+  <suite name="Default suite" duration-ms="107166" started-at="2018-11-14T10:43:15Z" finished-at="2018-11-14T10:45:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="343354" started-at="2018-11-13T07:48:17Z" finished-at="2018-11-13T07:54:00Z">
-      <class name="CitoolAutomationTesting.Analytics_TvProgramGuide">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="startReport" is-config="true" duration-ms="294" started-at="2018-11-13T11:48:17Z" finished-at="2018-11-13T11:48:17Z">
+    <test name="Default test" duration-ms="107166" started-at="2018-11-14T10:43:15Z" finished-at="2018-11-14T10:45:02Z">
+      <class name="CitoolAutomationTesting.OpertionsArea_AramexTracking">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:CitoolAutomationTesting.OpertionsArea_AramexTracking@3632be31]" name="startReport" is-config="true" duration-ms="174" started-at="2018-11-14T14:43:15Z" finished-at="2018-11-14T14:43:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="failTest()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="failTest" duration-ms="341888" started-at="2018-11-13T11:48:17Z" finished-at="2018-11-13T11:53:59Z">
+        <test-method status="PASS" signature="failTest()[pri:0, instance:CitoolAutomationTesting.OpertionsArea_AramexTracking@3632be31]" name="failTest" duration-ms="105807" started-at="2018-11-14T14:43:15Z" finished-at="2018-11-14T14:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="getResult" is-config="true" duration-ms="6" started-at="2018-11-13T11:53:59Z" finished-at="2018-11-13T11:53:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=failTest status=SUCCESS method=Analytics_TvProgramGuide.failTest()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="passTest()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="passTest" duration-ms="7" started-at="2018-11-13T11:53:59Z" finished-at="2018-11-13T11:53:59Z">
+        <test-method status="PASS" signature="passTest()[pri:0, instance:CitoolAutomationTesting.OpertionsArea_AramexTracking@3632be31]" name="passTest" duration-ms="16" started-at="2018-11-14T14:45:01Z" finished-at="2018-11-14T14:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="getResult" is-config="true" duration-ms="0" started-at="2018-11-13T11:53:59Z" finished-at="2018-11-13T11:53:59Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.OpertionsArea_AramexTracking@3632be31]" name="getResult" is-config="true" duration-ms="0" started-at="2018-11-14T14:45:01Z" finished-at="2018-11-14T14:45:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=passTest status=SUCCESS method=Analytics_TvProgramGuide.passTest()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973] output={null}]]]>
+                <![CDATA[[TestResult name=failTest status=SUCCESS method=OpertionsArea_AramexTracking.failTest()[pri:0, instance:CitoolAutomationTesting.OpertionsArea_AramexTracking@3632be31] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:CitoolAutomationTesting.Analytics_TvProgramGuide@34c4973]" name="endReport" is-config="true" duration-ms="1138" started-at="2018-11-13T11:53:59Z" finished-at="2018-11-13T11:54:00Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CitoolAutomationTesting.OpertionsArea_AramexTracking@3632be31]" name="getResult" is-config="true" duration-ms="0" started-at="2018-11-14T14:45:01Z" finished-at="2018-11-14T14:45:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=passTest status=SUCCESS method=OpertionsArea_AramexTracking.passTest()[pri:0, instance:CitoolAutomationTesting.OpertionsArea_AramexTracking@3632be31] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:CitoolAutomationTesting.OpertionsArea_AramexTracking@3632be31]" name="endReport" is-config="true" duration-ms="1139" started-at="2018-11-14T14:45:01Z" finished-at="2018-11-14T14:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- CitoolAutomationTesting.Analytics_TvProgramGuide -->
+      </class> <!-- CitoolAutomationTesting.OpertionsArea_AramexTracking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
